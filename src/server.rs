@@ -5,6 +5,7 @@ use std::net::{TcpListener};
 fn main() -> std::io::Result<()> {
     // Bind the listener to the address
     let listener = TcpListener::bind("127.0.0.1:8000")?;
+    println!("Server started");
 
     // Listen for incoming connections
     for stream in listener.incoming() {
