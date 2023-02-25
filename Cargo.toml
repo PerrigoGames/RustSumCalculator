@@ -1,0 +1,19 @@
+[package]
+name = "add_server"
+version = "0.1.0"
+authors = ["Corey Perrigo <corey@perrigogames.com>"]
+edition = "2018"
+
+[lib]
+name = "add_server_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
